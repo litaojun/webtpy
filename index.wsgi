@@ -1,9 +1,16 @@
-import sys  
-import os.path  
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 
-sys.path.append(os.path.join(os.path.dirname(__file__), 'test'))  
-    
-import sae  
-from test import myweb  
-    
-application = sae.create_wsgi_app(myweb.testweb)
+import sae
+import web
+
+urls = (
+    '/','hello'
+)
+
+class hello:
+    def GET(self):
+        return "hello"
+
+app = web.application(urls,globals()).wsgifunc()
+application = sae.create_wsgi_app(app)
