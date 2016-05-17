@@ -7,7 +7,7 @@ import sae
 import web
 
 urls = (
-    '/', 'hello'
+    '/', 'Hello'
 )
 
 app_root = os.path.dirname(__file__)
