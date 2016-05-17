@@ -14,6 +14,9 @@ urls = (
 class index:
     def GET(self):
         return render.index("")
+def testweb(self):
+    app = web.application(urls, globals())
+    app.run()
 
 if __name__ == "__main__":
     app = web.application(urls, globals())
