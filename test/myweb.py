@@ -21,6 +21,7 @@ class Hello:
     def GET(self):
         return render.hello()
 def testweb():
+    print "litaojun"
     app = web.application(urls, globals()).wsgifunc()
     application = sae.create_wsgi_app(app)
     return application
