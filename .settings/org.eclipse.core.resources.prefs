@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
+encoding//templates/postlist.html=UTF-8
+encoding//test/base.py=utf-8
 encoding//test/config.py=utf-8
 encoding//test/myweb.py=utf-8
 encoding//test/outh2test.py=utf-8
