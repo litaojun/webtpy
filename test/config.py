@@ -7,7 +7,7 @@ Created on 2016��5��18��
 '''
 import web
 import sae
-runtime = 'SAEs'
+runtime = 'SAE'
 if runtime == 'SAE':
    render = web.template.render('templates')
 else:
