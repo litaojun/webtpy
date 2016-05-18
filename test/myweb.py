@@ -7,15 +7,10 @@ Created on 2016��4��27��
 '''
 import web
 import sae
-render = web.template.render('templates')
-urls = (
-    '/','Hello',
-    '/index', 'Index'
-)
+from outh2test import Index
+from config import render,urls
+#render = web.template.render('templates')
 
-class Index:
-    def GET(self):
-        return render.index("")
 
 class Hello:
     def GET(self):
