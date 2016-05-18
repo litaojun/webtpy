@@ -7,7 +7,7 @@ Created on 2016��4��27��
 '''
 import web
 import sae
-render = web.template.render('../templates/')
+render = web.template.render('/templates/')
 urls = (
     '/','Hello',
     '/index', 'Index'
