@@ -4,3 +4,4 @@ encoding//test/base.py=utf-8
 encoding//test/config.py=utf-8
 encoding//test/myweb.py=utf-8
 encoding//test/outh2test.py=utf-8
+encoding//util/httppost.py=utf8

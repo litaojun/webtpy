@@ -6,9 +6,9 @@ $def with (name)
 </head>
 <script type="text/javascript">
 	window.onload=function(){
-		      //alert("litaojun--1");
+		  alert("litaojun--1");
           sign = isNull($name);
-          //alert("litaojun--2"+sign);
+          alert("litaojun--2"+sign);
           if(sign != "meiyou")
           {
           	   //alert("litaojun--3");
@@ -22,7 +22,7 @@ $def with (name)
 		sign = isNull(token);
 		alert(sign);
 		if(sign == "meiyou")
-			url = "http://localhost:8080/appDemo/oauth/authorize?client_id=m1&redirect_uri=http%3a%2f%2flocalhost%3a8080%2fappDemo%2flitaojun%2ftestapp&response_type=code&scope=read";
+			url = "http://localhost:8080/appDemo/oauth/authorize?client_id=m1&redirect_uri=http%3a%2f%2flocalhost%3a12345%2flitaojun&response_type=code&scope=read";
 		else
 		    url = "http://localhost:8080/appDemo/resource/getUserInfo?access_token=" + token;
 		window.location.href = url;
@@ -41,7 +41,7 @@ $def with (name)
 	    <td width="9"></td>
 	    <td>
 	      <div style="margin-top:10px;margin-bottom:10px;">
-	        <a href="" onclick="openuser($name)"  >访问第三方资源</a>&nbsp;        <br />
+	        <a href="" onclick="openuser('$name')"  >访问第三方资源</a>&nbsp;        <br />
 	      </div>
 	    </td>
 	    <td align="right">Powered by yihaomen.com</td>

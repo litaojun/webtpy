@@ -7,7 +7,9 @@ Created on 2016��5��18��
 '''
 import web
 import sae
-runtime = 'SAE'
+runtime = 'SAEs'
+hostip = "localhost"
+port = 8080
 if runtime == 'SAE':
    render = web.template.render('templates')
 else:
@@ -15,6 +17,8 @@ else:
 urls = (
     '/','Login',
     '/index', 'Index',
-    '/login','Login'
+    '/login','Login',
+    '/resource','OtherResouce',
+    '/litaojun','DealCode'
 )
         

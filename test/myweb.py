@@ -7,7 +7,7 @@ Created on 2016��4��27��
 '''
 import web
 import sae
-from outh2test import Index
+from outh2test import Index,OtherResouce,DealCode
 from config import render,urls,runtime
 from base import Render as R
 
@@ -54,7 +54,6 @@ def testweb():
     else:
         pass
     return application
-
 app = web.application(urls, globals())
 
 if __name__ == "__main__":
